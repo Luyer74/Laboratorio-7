@@ -23,7 +23,7 @@ $("#animal-buttons").on("click", ".animal-button", function() {
     $("#animals").empty();
 
     var type = $(this).attr("data-type");
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=X5iexFlnemcMlVZwgwvdUaf0xOtZ6oov&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=X5iexFlnemcMlVZwgwvdUaf0xOtZ6oov&limit=10";
     $.ajax({
         url: queryURL,
         method: "GET"
